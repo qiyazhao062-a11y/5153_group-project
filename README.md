@@ -9,7 +9,7 @@ This project builds a multilingual toxic comment detection system. Given an inpu
 ```
 ├── 01_preprocessing_EDA.ipynb   # Data loading, preparation, and exploratory analysis
 ├── 02_modeling.ipynb            # Model training (TF-IDF+LR, BiLSTM, mBERT, XLM-R)
-├── 03_evaluation.ipynb          # Threshold optimisation and final evaluation
+├── 03_evaluation.ipynb          # Threshold optimisation, final evaluation, and test set performance
 └── README.md
 ```
 
@@ -32,7 +32,7 @@ Run the notebooks **in order**:
 
 1. **`01_preprocessing_EDA.ipynb`** — loads raw data, cleans and prepares it, saves processed files to Google Drive
 2. **`02_modeling.ipynb`** — trains all models, saves prediction files to Google Drive
-3. **`03_evaluation.ipynb`** — loads prediction files from step 2, runs threshold optimisation and final evaluation
+3. **`03_evaluation.ipynb`** — loads prediction files from step 2, runs threshold optimisation, final multilingual evaluation, and test set performance
 
 ## Path Configuration
 
