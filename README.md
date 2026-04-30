@@ -13,9 +13,19 @@ This project builds a multilingual toxic comment detection system. Given an inpu
 └── README.md
 ```
 
-## Dataset
+## Data
 
 Data is from the [Jigsaw Multilingual Toxic Comment Classification](https://www.kaggle.com/competitions/jigsaw-multilingual-toxic-comment-classification/data) Kaggle competition.
+
+Due to file size constraints, `data05.zip` contains:
+- `prepared data/` — preprocessed training/dev/validation splits (output of Module 1–2)
+- `test.csv` — raw test set
+- `test_labels.csv` — test set labels
+
+The original Kaggle raw files (`jigsaw-toxic-comment-train.csv`, 
+`jigsaw-unintended-bias-train.csv`) are not included.
+To reproduce Module 1 from scratch, download them from:
+https://www.kaggle.com/competitions/jigsaw-multilingual-toxic-comment-classification/data
 
 ## Environment
 
