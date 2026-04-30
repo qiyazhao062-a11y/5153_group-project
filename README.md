@@ -34,6 +34,22 @@ Run the notebooks **in order**:
 2. **`02_modeling.ipynb`** — trains all models, saves prediction files to Google Drive
 3. **`03_evaluation.ipynb`** — loads prediction files from step 2, runs threshold optimisation, final multilingual evaluation, and test set performance
 
+## Module Map
+
+| Module | Notebook | Implementation |
+|--------|----------|----------------|
+| Module 0: Problem Framing | `01_preprocessing_EDA.ipynb` | Project task, setting, and research questions |
+| Module 1: Data Loading and sanity check | `01_preprocessing_EDA.ipynb` | Raw data loading, schema checks, missing values, class/language checks |
+| Module 2: Data Preparation | `01_preprocessing_EDA.ipynb` | Cleaning, train/dev construction, sampling, processed output files |
+| Module 3: Exploratory Data Analysis | `01_preprocessing_EDA.ipynb` | Class balance, comment length, language distribution, toxic ratio, domain gap |
+| Module 4.1: TF-IDF + Logistic Regression | `02_modeling.ipynb` | Baseline pipeline, predictions, metrics, per-language results |
+| Module 4.2: BiLSTM | `02_modeling.ipynb` | Neural baseline training, predictions, metrics, per-language results |
+| Module 4.3: mBERT + XLM-R | `02_modeling.ipynb` | Transformer fine-tuning and zero-shot multilingual validation |
+| Module 4.4: Evaluation and Comparison | `02_modeling.ipynb` | Overall comparison, per-language comparison, model ranking |
+| Module 5: Threshold Optimization | `03_evaluation.ipynb` | Default, global tuned, per-language oracle, and proper per-language threshold strategies |
+| Module 6: Evaluation | `03_evaluation.ipynb` | Overall and per-language metrics across models and threshold settings |
+| Module 7: Test Performance and Final Interpretation | `03_evaluation.ipynb` / report | Test predictions, test metrics when labels are available, final interpretation |
+
 ## Path Configuration
 
 Before running, update the `DATA_PATH` / `PROJECT_ROOT` variables in each notebook to match your own Google Drive folder path:
